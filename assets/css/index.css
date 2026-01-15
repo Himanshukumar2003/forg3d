@@ -1368,6 +1368,10 @@ font-size: 50px;
 }
 
 
+section{
+  overflow: hidden;
+}
+
 
 
 
