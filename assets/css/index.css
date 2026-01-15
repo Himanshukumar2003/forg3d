@@ -1365,6 +1365,9 @@ font-size: 50px;
     .why-right::before {
         display: none;
     }
+  .logo{
+    padding-left: 30px;
+  }
 }
 
 
