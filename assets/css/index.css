@@ -1303,6 +1303,10 @@ height: 250px;
         gap: 15px;
         text-align: center;
     }
+
+    .hero-main h1 {
+font-size: 50px;
+    }
 }
 
 
