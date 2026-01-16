@@ -1303,6 +1303,9 @@ height: 250px;
         gap: 15px;
         text-align: center;
     }
+    .product-title{
+font-size: 2rem;
+    }
 
     .hero-main h1 {
 font-size: 50px;
@@ -2421,7 +2424,7 @@ h5{
         }
 
         .product-title {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 300;
             color: var(--primary-color);
             line-height: 1.1;
