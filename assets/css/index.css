@@ -103,7 +103,7 @@ body {
 /* ================= NAVBAR ================= */
 /* ================= NAVBAR ================= */
 .navbar {
-    background-color: transparent;
+    background-color: white;
     padding: 14px 0;
     position: fixed;
     width: 100%;
@@ -113,9 +113,7 @@ body {
 
 /* SCROLLED NAVBAR */
 
-.navbar{
-    border-bottom: 1px solid #FFFFFF40;
-}
+
 
 
 .navbar.scrolled {
@@ -133,7 +131,7 @@ body {
 
 /* LINKS DEFAULT (HERO) */
 .navbar-nav .nav-link {
-    color: var(--light-text) !important;
+    color: #111 !important;
     font-weight: 600;
     margin: 0 14px;
     font-size: 14px;
@@ -1803,8 +1801,11 @@ color: #fff;
 }
 
 .breadcrumb-overlay {
-   background: rgba(0,0,0,0.75); 
-  height: 100%;
+ background: linear-gradient(
+    135deg,
+    rgba(85, 120, 255, 0.30),
+    rgba(58, 46, 118, 0.30)
+  );
   display: flex;
   align-items: center;
   position: absolute;
@@ -1819,7 +1820,7 @@ color: #fff;
 .breadcrumb-title {
   color: #fff;
   font-size: 42px;
-  margin-top: 40px;
+  margin-top: 90px;
   margin-bottom: 10px;
 }
 
