@@ -1367,6 +1367,17 @@ font-size: 50px;
     .infra-card img {
         height: 260px;
     }
+
+.why-box{
+      padding: 20px 25px !important;
+
+}
+.why-us-section{
+  background-image: none !important;
+  background-color: #F8F9FA;
+  
+}
+
 }
 
 
