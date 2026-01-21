@@ -131,7 +131,7 @@ body {
 
 /* LINKS DEFAULT (HERO) */
 .navbar-nav .nav-link {
-    color: #111 !important;
+    color: #111;
     font-weight: 600;
     margin: 0 14px;
     font-size: 14px;
