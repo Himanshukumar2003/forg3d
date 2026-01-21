@@ -2908,3 +2908,65 @@ h5{
             background-color: var(--primary-color);
             color: var(--light-text);
         }
+
+
+        ::marker{
+          color: var(--primary-color);
+        }
+
+
+        .blog-sidebar {
+    position: sticky;
+    top: 90px;
+}
+
+.sidebar-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.related-blog-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.related-blog-item img {
+    width: 80px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.related-blog-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.related-blog-title:hover {
+    color: var(--primary-dark); /* premium red */
+}
+
+.line-clamp {
+    font-size: 13px;
+    color: #666;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 2–3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
