@@ -67,10 +67,11 @@
 
 
 :root {
-    --primary-color: #d53b7b ;
-    --primary-dark: #b92f66;
+    --primary-color: oklch(67.915% 0.13604 234.72) ;
+    --primary-dark: #3A2E76;
     --dark-bg: #040404;
-    --overlay:rgba(213, 59, 123, 0.35);
+    --overlay:
+    rgba(32, 164, 223, 0.35);
 
     --overlay-dark: rgba(0, 0, 0, 0.35);
     --light-text: #ffffff;
@@ -125,7 +126,7 @@ body {
 
 /* LOGO */
 .logo {
-    height: 50px;
+    height: 60px;
     transform: scale(1.6);
     transition: var(--transition);
 }
@@ -259,7 +260,7 @@ overflow: hidden;
 /* ================= HERO SECTION ================= */
 .hero-section {
     height: 100vh;
-    background:url('../img/imgi_23_VSP_0349.jpg') center right / cover no-repeat;
+    background:url('../img/hero.jpg') center right / cover no-repeat;
     display: flex;
     align-items: center;
     position: relative;
@@ -871,7 +872,7 @@ height: 250px;
 .btn-hover {
   position: absolute;
   inset: 0;
-  background-color: #c02a68;
+  background-color: var(--primary-dark);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -905,8 +906,8 @@ height: 250px;
     /* Background image with overlay */
     background: 
         linear-gradient(
-               rgba(213, 59, 123, 0.75),
-    rgba(213, 59, 123, 0.75)
+               rgb(32, 164, 223, 0.50),
+    rgba(58, 46, 118, 0.70)
         ),
         url("../img/imgi_20_VSP_6569.jpg");
 
@@ -1192,7 +1193,7 @@ height: 250px;
    .Skill {
             position: relative;
           padding: 80px 0;
-            background: url("../img/engineer-team-service-robot-welding-working-in-aut-MZ95Y9M.jpg") center/cover no-repeat;
+            background: url("../img/our-projects.jpg") center/cover no-repeat;
             display: flex;
             background-attachment: fixed;
             align-items: center;
@@ -1648,6 +1649,7 @@ color: #fff;
 
 .main-img {
   border-radius: 10px;
+  height: 100%;
 }
 
 /* EXPERIENCE BADGE */
@@ -2588,7 +2590,7 @@ h5{
 }
 
 .highlight-box {
-  background: linear-gradient(to right, rgba(213, 59, 123, 0.05), rgba(213, 59, 123, 0.12));
+  background: var(--overlay);
   border: 1px solid rgba(213, 59, 123, 0.2);
   border-radius: 12px;
 }
@@ -2611,7 +2613,7 @@ h5{
 }
 
 .icon-box {
-  background: rgba(213, 59, 123, 0.1);
+  background: var(--overlay);
   padding: 16px;
   border-radius: 10px;
   width: fit-content;
@@ -2643,7 +2645,7 @@ h5{
 .icon-square {
   width: 48px;
   height: 48px;
-  background: rgba(213, 59, 123, 0.1);
+  background:  var(--overlay);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -2653,12 +2655,8 @@ h5{
 }
 
 .capacity-box {
-  background: linear-gradient(
-    135deg,
-    rgba(213, 59, 123, 0.1),
-    rgba(213, 59, 123, 0.05)
-  );
-  border: 1px solid rgba(213, 59, 123, 0.2);
+  background: var(--overlay);
+  border: 1px solid rgba(59, 115, 213, 0.2);
   border-radius: 14px;
 }
 /* Common button style */
@@ -2718,7 +2716,7 @@ h5{
 
     .leader-accent-line {
         height: 6px;
-        background: linear-gradient(to right, #d53b7b, #a82961);
+        background: linear-gradient(to right, var(--primary-color), (--dark-bg));
     }
 
     .leader-img {
