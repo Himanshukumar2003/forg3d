@@ -126,7 +126,7 @@ body {
 
 /* LOGO */
 .logo {
-    height: 60px;
+    height: 55px;
     transform: scale(1.6);
     transition: var(--transition);
 }
