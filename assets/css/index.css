@@ -725,11 +725,11 @@ overflow: hidden;
   content: "››";
   position: absolute;
   left: 0;
-  color: var(--primary-dark);
+  color: var(--primary-color);
 }
 
 .footer-links a:hover {
-  color: var(--primary-dark);
+  color: var(--primary-color);
 }
 
 /* CONTACT */
@@ -746,7 +746,7 @@ overflow: hidden;
 }
 
 .footer-contact i {
-  color: var(--primary-dark);
+  color: var(--primary-color);
   font-size: 18px;
 }
 
