@@ -120,7 +120,7 @@ body {
     padding: 10px 30px;
     position: fixed;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 1000;
     transition: all 0.4s ease;
 }
@@ -410,6 +410,9 @@ overflow: hidden;
     display: flex;
     gap: 18px;
     justify-content: center
+}
+.btn-group-hero a{
+  text-decoration: none;
 }
 
 .btn-solutions {
@@ -752,11 +755,18 @@ overflow: hidden;
 }
 
 .footer-contact li {
-  display: flex;
-  gap: 12px;
+
   margin-bottom: 16px;
   font-size: 14px;
 }
+
+.address{
+   display: flex; 
+  gap: 12px;
+}
+ .address h6{
+  color: var(--primary-color);
+ }
 
 .footer-contact i {
   color: var(--primary-color);
@@ -3012,3 +3022,57 @@ h5{
 }
 
 
+
+.floating-btn{
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .floating-btn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: safe center;
+        align-items: center;
+        z-index: 100 !important;
+    }
+}
+
+
+
+.floating-btn a{
+      padding: 15px 25px;
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+width: 100%;
+text-decoration: none;
+    transition: 0.5s ease all;
+}
+
+.floating-btn .phone{
+  background: var(--primary-color);
+
+}
+
+.whatsapp{
+  background: #155724;
+}
+
+
+.brochure{
+  position: fixed;
+  background-color: var(--primary-color);
+  top: 50%;
+  text-decoration: none;
+rotate: 90deg;
+right: -80px;
+z-index: 100;
+}
+
+.brochure:hover{
+  background-color: var(--primary-dark);
+}
