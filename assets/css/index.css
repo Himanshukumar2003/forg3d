@@ -260,9 +260,15 @@ overflow: hidden;
         background-color: #ffffff;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        box-shadow: none;
      
 }
+.navbar-collapse {
+    transition: height 0.3s ease;
+}
+
+
+
 
     .navbar-nav .nav-link {
         color: #111 !important;
@@ -1416,9 +1422,7 @@ font-size: 50px;
     .why-right::before {
         display: none;
     }
-  .logo{
-    padding-left: 30px;
-  }
+
 }
 
 
@@ -1599,7 +1603,7 @@ color: #fff;
 
 /* TITLE */
 .service-card h6 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.45;
   margin-bottom: 12px;
@@ -3028,17 +3032,25 @@ h5{
 }
 
 @media screen and (max-width: 767px) {
-    .floating-btn {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: safe center;
-        align-items: center;
-        z-index: 100 !important;
-    }
+ .floating-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100 !important;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.floating-btn.hide {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
 }
 
 
